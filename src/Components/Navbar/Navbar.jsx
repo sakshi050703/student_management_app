@@ -31,6 +31,10 @@ const Navbar = () => {
                                 <i className="bi bi-file-earmark-person-fill fs-5 text-warning"></i>
                                 <NavLink className="nav-link active fs-5 text-warning p-0 m-0" aria-current="page" to="/career">Career</NavLink>
                             </li>
+                            <li className="nav-item  btn btn-outline-secondary p-1 h-25">
+                                <i className="bi bi-file-earmark-person-fill fs-5 text-warning"></i>
+                                <NavLink className="nav-link active fs-5 text-warning p-0 m-0" aria-current="page" to="/studentlogin">Student Login</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

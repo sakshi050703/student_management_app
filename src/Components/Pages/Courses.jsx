@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom'
 const Courses = () => {
     return (
         <div>
-            <div className='bg-dark'>
+            <div className='bg-light'>
                 <h2 className='text-center p-3 text-light'>Explore Our </h2>
                 <h1 className='text-center'>
                     <span className='text-info'>Popular Courses</span> <span className='text-warning'>Build For Everyone</span>

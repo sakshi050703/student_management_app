@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const Studata = () => {
 
     const [student,setStudent] = useState([])
+    const [searchName, setSearchName] = useState('')
 
     const fetchData = async() =>{
         const response = await axios.get('http://localhost:8000/students')
@@ -25,9 +26,28 @@ const Studata = () => {
         navigate('/admin')
     }
 
+    const searchHandler = (event) =>{
+        const search = event.target.value
+        setSearchName(search)
+    }
+
+    const searchNameHandler = student.filter((stu)=>{
+        return stu.course.toLowerCase().includes(searchName.toLowerCase())
+    })
+
   return (
     <div>
         <h2>Student Details </h2>
+        <div className='mt-3 mb-3 w-50 mx-auto'>
+            <input 
+                type="text"
+                className='form-control'
+                placeholder='Type Course Name.....'
+                value={searchName}
+                onChange={searchHandler}
+            />
+            <h4>Serch Value - {searchName}</h4>
+        </div>
         <table className='table'>
             <thead>
                 <tr>
@@ -42,13 +62,14 @@ const Studata = () => {
                     <th>Fees</th>
                     <th>DOB</th>
                     <th>Pincode</th>
+                    <th>Password</th>
                     <th>Email</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 {
-                    student.map((stu,index)=>{
+                    searchNameHandler.map((stu,index)=>{
                         return(
                             <tr key={index}>
                                 <td>{index + 1}</td>
@@ -62,6 +83,7 @@ const Studata = () => {
                                 <td>{stu.fees}</td>
                                 <td>{stu.dob}</td>
                                 <td>{stu.pincode}</td>
+                                <td>{stu.password}</td>
                                 <td>{stu.email}</td>
                                 <td>
                                     <NavLink to={`/update/student/${stu.id}`}><button className='btn btn-warning me-1'>Edit</button></NavLink>

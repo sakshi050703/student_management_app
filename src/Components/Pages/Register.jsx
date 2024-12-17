@@ -142,6 +142,11 @@ const Register = () => {
                         </div>
 
                         <div data-mdb-input-init className="form-outline mb-4">
+                          <input type="text" id="form3Example90" className="form-control form-control-lg"  {...register('password')} />
+                          <label className="form-label" htmlFor="form3Example90">Password</label>
+                        </div>
+
+                        <div data-mdb-input-init className="form-outline mb-4">
                           <input type="text" id="form3Example97" className="form-control form-control-lg"  {...register('email')} />
                           <label className="form-label" htmlFor="form3Example97">Email ID</label>
                         </div>

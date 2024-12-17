@@ -13,6 +13,7 @@ import Register from './Components/Pages/Register.jsx';
 import Studata from './Components/Pages/Studata.jsx';
 import Update from './Components/Pages/Update.jsx'
 import Delete from './Components/Pages/Delete.jsx';
+import Studentlogin from './Components/Pages/Studentlogin.jsx';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
           {/* Using dynamic routing we can access each uers data by using useParams() */}
           <Route path='/update/student/:studentID' element={<Update/>}></Route>
           <Route path='/delete/student/:studentID' element={<Delete/>}></Route>
+          <Route path='/studentlogin' element={<Studentlogin/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer/>
