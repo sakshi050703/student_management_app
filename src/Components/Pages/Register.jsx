@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios'
 const Register = () => {
 
-  const { register, handleSubmit, reset, setValue} = useForm()
+  const { register, handleSubmit, reset, setValue, formState : {errors}} = useForm()
 
   const postData = (data) => {
     axios.post('http://localhost:8000/students', data)
@@ -51,14 +51,35 @@ const Register = () => {
                         <div className="row">
                           <div className="col-md-6 mb-4">
                             <div data-mdb-input-init className="form-outline">
-                              <input type="text" id="form3Example1m" className="form-control form-control-lg" {...register('fname')} />
+                              <input type="text" id="form3Example1m" className="form-control form-control-lg" 
+                              {...register('fname',{ 
+                                required : 'First Name is required',
+                                pattern : {
+                                  value : /^[A-Za-z]+$/,
+                                  message : 'Only Alphabates are allowed'
+                                }
+                              })} />
                               <label className="form-label" htmlFor="form3Example1m">First name</label>
+                              {
+                                errors.fname && <p className='text-danger'>{errors.fname.message}</p>
+                              }
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
                             <div data-mdb-input-init className="form-outline">
-                              <input type="text" id="form3Example1n" className="form-control form-control-lg" {...register('lname')} />
+                              <input type="text" id="form3Example1n" className="form-control form-control-lg" 
+                              {...register('lname',{
+                                required : 'Last Name is Required',
+                                pattern : {
+                                  value :/^[A-Za-z]+$/,
+                                  message : 'Only Alphabates are allowed'
+                                }
+                              })} 
+                              />
                               <label className="form-label" htmlFor="form3Example1n">Last name</label>
+                              {
+                                errors.lname && <p className='text-danger'>{errors.lname.message}</p>
+                              }
                             </div>
                           </div>
                         </div>
@@ -139,11 +160,23 @@ const Register = () => {
                         <div data-mdb-input-init className="form-outline mb-4">
                           <input type="text" id="form3Example90" className="form-control form-control-lg"  {...register('pincode')} />
                           <label className="form-label" htmlFor="form3Example90">Pincode</label>
+                          
                         </div>
 
                         <div data-mdb-input-init className="form-outline mb-4">
-                          <input type="text" id="form3Example90" className="form-control form-control-lg"  {...register('password')} />
+                          <input type="text" id="form3Example90" className="form-control form-control-lg"  
+                          {...register('password',{
+                            required : 'Password in Required',
+                            pattern : {
+                              value : /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/,
+                              message : 'Password must be at least 8 characters, include one uppercase letter, and one special character'
+                            }
+                          })} 
+                          />
                           <label className="form-label" htmlFor="form3Example90">Password</label>
+                          {
+                            errors.password && <p className='text-danger'>{errors.password.message}</p>
+                          }
                         </div>
 
                         <div data-mdb-input-init className="form-outline mb-4">
@@ -169,3 +202,6 @@ const Register = () => {
 }
 
 export default Register
+
+
+

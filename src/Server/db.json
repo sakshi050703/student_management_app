@@ -16,19 +16,34 @@
       "id": "74df"
     },
     {
-      "id": "a411",
-      "fname": "",
-      "lname": "",
-      "mother_name": "",
-      "father_name": "",
-      "address": "",
-      "gender": null,
-      "course": "",
-      "fees": "",
-      "dob": "",
-      "pincode": "",
+      "id": "2316",
+      "fname": "MAYUR",
+      "lname": "RAJPUT",
+      "mother_name": "LATA",
+      "father_name": "KISHORSINGH",
+      "address": "KARVE NAGAR",
+      "gender": "male",
+      "course": "React",
+      "fees": "45000",
+      "dob": "10 MARCH 1995",
+      "pincode": "411023",
       "password": "Mayur@103",
-      "email": "m@gmail.com"
+      "email": "mayur@gmail.com"
+    },
+    {
+      "id": "649c",
+      "fname": "MAYUR",
+      "lname": "RAJPUT",
+      "mother_name": "LATA",
+      "father_name": "KISHORSINGH",
+      "address": "KARVE NAGAR",
+      "gender": "male",
+      "course": "Data Analytics",
+      "fees": "50000",
+      "dob": "10 MARCH 1995",
+      "pincode": "411052",
+      "password": "Mayur@103",
+      "email": "mayur@gmail.com"
     }
   ]
 }

@@ -5,7 +5,7 @@ import StudentDetails from './StudentDetails'
 const Studentlogin = () => {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-    const [loggedIn, setLoggedIn] = useState()
+    const [loggedIn, setLoggedIn] = useState([])
 
     const handleLogin = async() =>{
         const response = await axios.get('http://localhost:8000/students')
@@ -29,7 +29,7 @@ const Studentlogin = () => {
     }
 
     if(loggedIn){
-        return <StudentDetails stuLogin = {loggedIn} onLogout={handleLogout}/>
+        return <StudentDetails student={loggedIn} onLogout={handleLogout}/>
     }
 
   return (
