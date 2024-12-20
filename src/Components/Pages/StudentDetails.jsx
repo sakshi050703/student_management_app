@@ -25,6 +25,26 @@ const StudentDetails = ({onLogout, student}) => {
             </tr>
           </thead>
           <tbody>
+            {
+              student.map((stu,index)=>{
+                return(
+                  <tr  key={index}>
+                  <td>{stu.fname}</td>
+                  <td>{stu.lname}</td>
+                  <td>{stu.mother_name}</td>
+                  <td>{stu.father_name}</td>
+                  <td>{stu.address}</td>
+                  <td>{stu.gender}</td>
+                  <td>{stu.course}</td>
+                  <td>{stu.fees}</td>
+                  <td>{stu.dob}</td>
+                  <td>{stu.pincode}</td>
+                  <td>{stu.password}</td>
+                  <td>{stu.email}</td>
+                </tr>
+                )
+              })
+            }
             <tr>
               <td>{student.fname}</td>
               <td>{student.lname}</td>
@@ -47,3 +67,5 @@ const StudentDetails = ({onLogout, student}) => {
 }
 
 export default StudentDetails
+
+

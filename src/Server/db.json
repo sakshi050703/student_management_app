@@ -44,6 +44,21 @@
       "pincode": "411052",
       "password": "Mayur@103",
       "email": "mayur@gmail.com"
+    },
+    {
+      "fname": "mayur",
+      "lname": "rajput",
+      "mother_name": "Lata",
+      "father_name": "Kishorsingh",
+      "address": "Shegaon",
+      "gender": "male",
+      "course": "Java",
+      "fees": "35000",
+      "dob": "25 Dec 2024",
+      "pincode": "411052",
+      "password": "Mayur@103",
+      "email": "mayur@gmail.com",
+      "id": "3d91"
     }
   ]
 }
