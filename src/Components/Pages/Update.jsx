@@ -55,7 +55,7 @@ const Update = () => {
 
     //update data using PUT method
     const updateData = (data) =>{
-      axios.put(`http://localhost:8000/students/${studentID}`,data)
+      axios.put(`http://localhost:8000/update/students/${studentID}`,data)
       alert('Data Updated')
       navigate('/studata')
     }

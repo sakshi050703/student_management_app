@@ -35,7 +35,7 @@ const Studentlogin = () => {
 
     return (
         <div>
-            <h2 className='mt-5 mb-5'>Welcome to Student Login </h2>
+            <h2 className='mt-5 mb-5' style={{color : 'orange'}}>Welcome to Student Login </h2>
             <div className='bg-primary w-50 mx-auto p-3 rounded-3 mb-5'>
                 <div className='mt-3 mb-3'>
                     <input

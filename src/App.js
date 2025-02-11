@@ -28,8 +28,8 @@ function App() {
           <Route path='/career' element={<Career/>}></Route>
           <Route path='/studata' element={<Studata/>}></Route>
           {/* Using dynamic routing we can access each uers data by using useParams() */}
-          <Route path='/update/student/:studentID' element={<Update/>}></Route>
-          <Route path='/delete/student/:studentID' element={<Delete/>}></Route>
+          <Route path='/update/students/:studentID' element={<Update/>}></Route>
+          <Route path='/delete/students/:studentID' element={<Delete/>}></Route>
           <Route path='/studentlogin' element={<Studentlogin/>}></Route>
         </Routes>
       </BrowserRouter>

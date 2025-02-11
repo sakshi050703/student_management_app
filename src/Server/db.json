@@ -11,8 +11,8 @@
       "fees": "35000",
       "dob": "6 Dec 2024",
       "pincode": "411052",
-      "password": "Virat@103",
-      "email": "virat@gmail.com",
+      "password": "Virat@123",
+      "email": "virat18@gmail.com",
       "id": "74df"
     },
     {
@@ -46,19 +46,19 @@
       "email": "mayur@gmail.com"
     },
     {
-      "fname": "mayur",
-      "lname": "rajput",
-      "mother_name": "Lata",
-      "father_name": "Kishorsingh",
-      "address": "Shegaon",
+      "id": "10a6",
+      "fname": "ATUL",
+      "lname": "RATHODE",
+      "mother_name": "ABC",
+      "father_name": "XYZ",
+      "address": "KARVE NAGAR",
       "gender": "male",
-      "course": "Java",
-      "fees": "35000",
-      "dob": "25 Dec 2024",
+      "course": "React",
+      "fees": "45000",
+      "dob": "10 MARCH 1995",
       "pincode": "411052",
-      "password": "Mayur@103",
-      "email": "mayur@gmail.com",
-      "id": "3d91"
+      "password": "Atul@123",
+      "email": "atul@gmail.com"
     }
   ]
 }

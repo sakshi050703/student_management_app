@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-info m-0 p-0 w-100 footer'>
       <div className='fs-1 fw-bold pt-5 pb-3'>
-        Adhyayan IT Training and Placement
+        ABC IT Training and Placement
       </div>
       <div className='row m-0'>
         <div className='mt-3 col-5 text-center p-0'>
@@ -19,7 +19,7 @@ const Footer = () => {
                 < i class="bi bi-pin-map"></i>
               </div>
               <div>
-                Adhyayan, Office No.306, 3rd Floor, Krishnai Plaza, Canal Rd, Karve Nagar, Pune, Maharashtra 411052
+                ABC, Office No.306, 3rd Floor, Krishnai Plaza, Canal Rd, Karve Nagar, Pune, Maharashtra 411052
               </div>
             </div>
             <div className='text-start'>

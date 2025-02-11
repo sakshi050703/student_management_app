@@ -86,8 +86,8 @@ const Studata = () => {
                                 <td>{stu.password}</td>
                                 <td>{stu.email}</td>
                                 <td>
-                                    <NavLink to={`/update/student/${stu.id}`}><button className='btn btn-warning me-1'>Edit</button></NavLink>
-                                    <NavLink to={`/delete/student/${stu.id}`}><button className='btn btn-danger'>Delete</button></NavLink>
+                                    <NavLink to={`/update/students/${stu._id}`}><button className='btn btn-warning me-1'>Edit</button></NavLink>
+                                    <NavLink to={`/delete/students/${stu._id}`}><button className='btn btn-danger'>Delete</button></NavLink>
                                 </td>
                             </tr>
                         )
