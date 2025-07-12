@@ -59,6 +59,21 @@
       "pincode": "411052",
       "password": "Atul@123",
       "email": "atul@gmail.com"
+    },
+    {
+      "id": "ef38",
+      "fname": "Harsh",
+      "lname": "jadhav",
+      "mother_name": "",
+      "father_name": "",
+      "address": "Latur",
+      "gender": null,
+      "course": "",
+      "fees": "",
+      "dob": "",
+      "pincode": "",
+      "password": "Harshad@123",
+      "email": ""
     }
   ]
 }
